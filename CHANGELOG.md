@@ -1,7 +1,8 @@
 # CHANGES
-
+## 0.1.5
+* Updated dependencies
 ## 0.1.4
-* Update dependencies
+* Updated dependencies
 
 ## 0.1.3
 * Fix color problem
