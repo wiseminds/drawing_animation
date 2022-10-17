@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:path_parsing/path_parsing.dart';
-import 'package:xml/xml.dart' as xml;
+import 'package:xml/xml.dart' ;
 //SVG parsing
 
 
@@ -63,7 +63,7 @@ class SvgParser {
   void loadFromString(String svgString) {
     _pathSegments.clear();
     var index = 0; //number of parsed path elements
-    var doc = xml.parse(svgString);
+    var doc = XmlDocument.parse(svgString);
     //TODO For now only <path> tags are considered for parsing (add circle, rect, arcs etc.)
     doc
         .findAllElements('path')
